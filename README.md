@@ -1,79 +1,57 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Proyecto CoinMarket Challenge
 
-# Getting Started
+Este proyecto es parte de un desafío que consiste en desarrollar una aplicación móvil que se conecta a la API de CoinMarket para mostrar un listado de 100 criptomonedas con sus precios en dólares. La aplicación permite agregar criptomonedas a una lista de favoritos, utilizar autenticación de Google para acceder a la aplicación y ver más detalles sobre cada criptomoneda.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Características
 
-## Step 1: Start the Metro Server
+- Conexión a la API de CoinMarket para obtener datos en tiempo real sobre criptomonedas.
+- Visualización de un listado de 100 criptomonedas con sus precios en dólares.
+- Funcionalidad para agregar criptomonedas a una lista de favoritos.
+- Autenticación de Google para acceder a la aplicación.
+- Navegación entre pantallas implementada con React Navigation.
+- Visualización de detalles adicionales sobre cada criptomoneda.
+- Uso de Zustand y AsyncStorage para almacenar la lista de favoritos y persistir la información.
+- Configuración de ESLint y Prettier para estandarizar el código.
+- Template con las variables de entorno para poder configurarlas con credenciales propias.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Tecnologías utilizadas
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- React Native
+- Axios
+- React Query
+- Zustand
+- AsyncStorage
+- React Navigation
+- React Native Config
+- Google Sign-In
+- ESLint
+- Prettier
 
-```bash
-# using npm
-npm start
+## Instrucciones de instalación
 
-# OR using Yarn
-yarn start
-```
+1. Clona este repositorio en tu máquina local.
+2. Navega al directorio del proyecto.
+3. Instala las dependencias utilizando Yarn:
+   ```sh
+   yarn install
+   ```
+4. Instala los Pods para iOS:
+   ```sh
+   yarn run ios:install
+   ```
+5. Para correr la app en iOS:
+   ```sh
+   yarn run ios
+   ```
+6. Para correr la app en Android:
+   ```sh
+   yarn run android
+   ```
 
-## Step 2: Start your Application
+## Contribuir
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Si quieres contribuir a este proyecto, ¡eres bienvenido! Siéntete libre de abrir un pull request con cualquier mejora o corrección que desees realizar. También puedes informar sobre problemas abriendo un issue en el repositorio.
 
-### For Android
+## Licencia
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
